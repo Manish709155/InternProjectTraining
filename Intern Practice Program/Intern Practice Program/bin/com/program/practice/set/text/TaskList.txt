@@ -1,0 +1,43 @@
+Date:-06/27/2023
+Day-1
+Program:------------
+1. Simple Java Program
+2. Print Integer In java
+3.Command Line Argument in java 
+4.To check if the number is negative or positive
+5.Checking whether the number is even or odd
+
+
+package com.program.practice.set.text.day1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CommandLineArgumrentP1 {
+	public static final String Static_Keyword = "Daynil";
+	
+	public static void main(String[] args) {
+		System.out.println(args);
+		
+		CommandLineArgumrentP1 cp1 = new CommandLineArgumrentP1();
+		CommandLineArgumrentP1 cp2 = new CommandLineArgumrentP1();
+		
+		System.out.println(cp1.hashCode());
+		System.out.println(cp2.hashCode());
+		System.out.println(args.hashCode());
+		
+		
+		 args=new String[] {"Ani", "Sam", "Joe"};
+		int length = args.length;
+		System.out.println(length);
+		
+		List<String> list = new ArrayList<>();
+		for(String st:args) {
+		list.add(st);	
+		}
+		
+		System.out.println(list);
+		
+		
+	}
+}
